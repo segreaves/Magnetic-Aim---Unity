@@ -33,6 +33,7 @@ public class AimAssist : MonoBehaviour
         foreach (Transform target in targets)
         {
             Vector3 directionToTarget = target.position - transform.position;
+            /* you can uncomment the line below to limit assist to XZ axes (2-dimensional) */
             //directionToTarget.y = 0f;
             directionToTarget.Normalize();
             float angle = Vector3.Angle(aim, directionToTarget);
