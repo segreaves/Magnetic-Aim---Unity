@@ -1,6 +1,9 @@
 # MagneticAim-Unity
 Aim Assist system for Unity that increases assist strength the closer aiming is to the target.
 
+![image](https://github.com/user-attachments/assets/7c5a107f-82c9-47b0-ad87-b0975fe15e27)
+
+
 ## How it works:
 The GetAssistedAim() function in AimAssist.cs receives the raw aim vector as an argument. This function returns the modified aim-assisted vector.
 If aiming angle is within the user-set maximum threshold, then this vector will be corrected towards the nearest target (in angle).
